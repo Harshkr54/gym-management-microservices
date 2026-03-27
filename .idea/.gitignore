@@ -8,3 +8,9 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+
+**/application.properties
+**/application.yml
+.idea/
+target/
+*.env
