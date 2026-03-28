@@ -1,11 +1,19 @@
+# 🏋️ Gym Management Ecosystem - Microservices Architecture
+
+An enterprise-grade, distributed backend system designed to manage a modern gym chain. Built with **Spring Boot 3** and **Java 17**, this ecosystem leverages **Spring Cloud** for service discovery and routing, **Apache Kafka** for asynchronous event-driven architecture, and **Stripe** for secure payment processing.
+
+## 🏗️ System Architecture
+
+This monorepo contains six independent microservices that communicate securely to handle the entire user journey—from registration to booking to automated billing and notifications.
+
 ```mermaid
 graph TD
-    %% Styling
-    classDef infra fill:#f9f2f4,stroke:#333,stroke-width:2px;
-    classDef service fill:#d4edda,stroke:#28a745,stroke-width:2px;
-    classDef db fill:#cce5ff,stroke:#007bff,stroke-width:2px;
-    classDef event fill:#fff3cd,stroke:#ffc107,stroke-width:2px;
-    classDef external fill:#f8d7da,stroke:#dc3545,stroke-width:2px;
+    %% Styling with High Contrast for GitHub Dark/Light Mode
+    classDef infra fill:#e2e8f0,stroke:#475569,stroke-width:2px,color:#000000;
+    classDef service fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000;
+    classDef db fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#000000;
+    classDef event fill:#fef08a,stroke:#ca8a04,stroke-width:2px,color:#000000;
+    classDef external fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#000000;
 
     Client([📱 Web / Mobile Client]) -->|HTTP REST| Gateway
 
