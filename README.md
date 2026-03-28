@@ -1,4 +1,4 @@
-```
+```mermaid
 graph TD
     %% Styling
     classDef infra fill:#f9f2f4,stroke:#333,stroke-width:2px;
@@ -49,4 +49,3 @@ graph TD
     Payment -->|3. Publish PaymentEvent| Kafka
     Kafka -->|4. Consume Event| Notification
     Notification -->|5. Dispatch Welcome Email| SMTP
-```
